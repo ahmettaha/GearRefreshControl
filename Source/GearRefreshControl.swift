@@ -33,38 +33,38 @@ open class GearRefreshControl: UIRefreshControl {
         }
     }
 
-    fileprivate var refreshContainerView: UIView!
+    public var refreshContainerView: UIView!
     fileprivate var overlayView: UIView!
     fileprivate var shadowView: ShadowView = {
         let view = ShadowView()
         view.shadowPercentage = 0.2
         return view
         }()
-    fileprivate var centerGear: MainGear = {
+    public var centerGear: MainGear = {
         let view = MainGear()
         view.frame = CGRect(x: 0, y: 0, width: 48, height: 48)
         view.backgroundColor = .clear
         return view
         }()
-    fileprivate var topGear: BigGear = { // cue Jessica from the Allman brothers
+    public var topGear: BigGear = { // cue Jessica from the Allman brothers
         let view = BigGear()
         view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
         view.backgroundColor = .clear
         return view
         }()
-    fileprivate var rightGear: BigGear = {
+    public var rightGear: BigGear = {
         let view = BigGear()
         view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
         view.backgroundColor = .clear
         return view
         }()
-    fileprivate var bottomGear: BigGear = {
+    public var bottomGear: BigGear = {
         let view = BigGear()
         view.frame = CGRect(x: 0, y: 0, width: 88, height: 88)
         view.backgroundColor = .clear
         return view
         }()
-    fileprivate var leftGear: BigGear = {
+    public var leftGear: BigGear = {
         let view = BigGear()
         view.frame = CGRect(x: 0, y: 0, width: 92, height: 92)
         view.backgroundColor = .clear
